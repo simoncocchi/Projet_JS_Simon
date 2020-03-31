@@ -53,8 +53,8 @@
   .container {
     width: 80%; }
   .column,
-  .columns {
-    margin-left: 4%; }
+  .columns { margin-left: 10px;
+    margin-right: 10px;}
   .column:first-child,
   .columns:first-child {
     margin-left: 0; }
