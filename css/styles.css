@@ -41,5 +41,14 @@ header {
 .active, li:hover {
     font-weight: bold;
     text-decoration: blink;
-
 }
+
+/* css image et main */
+
+#headerImage img {
+	margin-bottom: 30px;
+	max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
