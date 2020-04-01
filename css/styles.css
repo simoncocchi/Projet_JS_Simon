@@ -38,9 +38,8 @@ header {
   position: relative;
 }
 
-.active,
-li:hover {
-  text-decoration: blink;
+.active {
+  font-size: 1.3em;
 }
 
 /* css image et main */
@@ -61,6 +60,5 @@ footer {
   background: #222;
 }
 footer a {
-  border-bottom: 1px solid #666;
   color: #eee;
 }
