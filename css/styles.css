@@ -1,54 +1,66 @@
 #nav {
-    margin: 13px 0 0 0;
+  margin: 13px 0 0 0;
 }
 
 #nav ul {
-    text-align:justify;
-    margin-bottom: -10px;
-    
+  text-align: justify;
+  margin-bottom: -10px;
 }
 
 header {
-    border-bottom: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
-#nav ul::after{ 
-    content:''; 
-    display:inline-block;
-    width:100%; }
+#nav ul::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
 
 #nav ul li {
-    display: inline-block;
-    /* margin-bottom: 130px; */
-    margin-bottom: 0;
-    font-size: 1.3em;
+  display: inline-block;
+  /* margin-bottom: 130px; */
+  margin-bottom: 0;
+  font-size: 1.3em;
 }
 
 #nav a {
-    text-decoration: none;
-    box-shadow: 0 2px 0 black;
+  text-decoration: none;
+  box-shadow: 0 2px 0 black;
 }
 
 #nav a:hover {
-    top: 2px;
-    box-shadow: none;
+  top: 2px;
+  box-shadow: none;
 }
 
 #test1 {
   position: relative;
 }
 
-.active, li:hover {
-    font-weight: bold;
-    text-decoration: blink;
+.active,
+li:hover {
+  text-decoration: blink;
 }
 
 /* css image et main */
 
 #headerImage img {
-	margin-bottom: 30px;
-	max-width: 100%;
-    height: auto;
-    margin-top: 20px;
+  margin-bottom: 30px;
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
 }
 
+/* footer CSS */
+
+footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  background: #222;
+}
+footer a {
+  border-bottom: 1px solid #666;
+  color: #eee;
+}
