@@ -39,7 +39,6 @@ header {
 }
 
 .active, li:hover {
-    font-weight: bold;
     text-decoration: blink;
 }
 
@@ -51,4 +50,6 @@ header {
     height: auto;
     margin-top: 20px;
 }
+
+/* footer CSS */
 
