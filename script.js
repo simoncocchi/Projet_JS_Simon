@@ -9,7 +9,10 @@ fetch('https://jsonplaceholder.typicode.com/users/1/posts')
 
 function create_titre(data) {
     let createtitre = document.createElement('h1'); // creation du titre
-    createtitre.textContent = data['title'];
+
+    const titre = data['title'];
+    const capitalizedTitre = titre.charAt(0).toUpperCase()  + titre.slice(1);
+    createtitre.textContent = capitalizedTitre;
 
     return createtitre;
 }
@@ -21,7 +24,6 @@ function create_article(data) {
     return createbody;
 }
 
-
 function fillTheFeed (jsondata) { 
     let feedSelector = document.querySelector('#welcome');
     jsondata.forEach((element, i) => { // i ???????? fournit les données comme une boucle for i ? 
@@ -31,3 +33,4 @@ function fillTheFeed (jsondata) {
 }
 
 fetchAllPost();
+
