@@ -1,17 +1,33 @@
+function fetchAllPost() { // fonction qui récupérer tout les données 
 fetch('https://jsonplaceholder.typicode.com/users/1/posts')
     .then(response => response.json())
-    .then(json => json.forEach(element => {
-        create_article(element['title'], element['body'])
-    })
-    );
-
-function create_article(titre, body) {
-    let createtitre = document.createElement('h1'); // creation du titre
-    createtitre.textContent = titre;
-
-    let createbody = document.createElement('p'); // création du body
-    createbody.textContent = body;
-
-    document.querySelector('#welcome').appendChild(createtitre);// on place le titre
-    document.querySelector('#welcome').appendChild(createbody);// on place le text
+    .then(json => {
+        fillTheFeed(json);
+    });
 }
+
+
+function create_titre(data) {
+    let createtitre = document.createElement('h1'); // creation du titre
+    createtitre.textContent = data['title'];
+
+    return createtitre;
+}
+
+function create_article(data) {
+    let createbody = document.createElement('p'); // création du body
+    createbody.textContent = data['body'];
+
+    return createbody;
+}
+
+
+function fillTheFeed (jsondata) { 
+    let feedSelector = document.querySelector('#welcome');
+    jsondata.forEach((element, i) => { // i ???????? fournit les données comme une boucle for i ? 
+        feedSelector.appendChild(create_titre(element)); 
+        feedSelector.appendChild(create_article(element));
+    });
+}
+
+fetchAllPost();
