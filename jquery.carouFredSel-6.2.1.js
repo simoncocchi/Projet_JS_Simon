@@ -2708,7 +2708,7 @@
 		'synchronise'	: false,
 		'infinite'		: true,
 		'circular'		: true,
-		'responsive'	: true,``
+		'responsive'	: false,
 		'direction'		: 'left',
 		'items'			: {
 			'start'			: 0

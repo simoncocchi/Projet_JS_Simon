@@ -56,13 +56,17 @@ footer {
   padding-bottom: 20px;
   text-align: center;
   background: #222;
+  width: 400px;
 }
 footer a {
   color: #eee;
 }
 
 /* Pour le carouselle*/
+/* 
+#carousel {
 
-/* #carousel {
-
+} */
+/* #headerImage {
+  
 } */

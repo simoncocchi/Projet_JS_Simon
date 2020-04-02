@@ -78,3 +78,15 @@ function fillTheFeed (jsondata) {
 
 fetchAllPost();
 
+// carousel
+$(document).ready(function () {
+    // Using default configuration
+    // $(carousel).carouFredSel();
+
+    //Using custom configuration
+    $(carousel).carouFredSel({
+        responsive	: true,
+        align: "center",
+        direction: 'down'
+    });
+  });
