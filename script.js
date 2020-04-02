@@ -87,6 +87,6 @@ $(document).ready(function () {
     $(carousel).carouFredSel({
         responsive	: true,
         align: "center",
-        direction: 'down'
+        direction: 'left'
     });
   });
