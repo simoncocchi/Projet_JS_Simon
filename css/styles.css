@@ -29,15 +29,19 @@ ul ul {
   position: absolute;
   right: -10%;
   z-index: 1;
-  background-color: white;
-  padding-left: 5px;
-  padding-right: 0px;
   height: 0px;
   overflow: hidden;
 }
 ul li:hover ul {
   height: auto;
   overflow: auto;
+}
+
+ul ul li {
+
+  background-color: white;
+  padding-left: 2px;
+  padding-right: 2px;
 }
 
 /* #nav a {
