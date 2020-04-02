@@ -30,6 +30,8 @@ ul ul {
   right: -10%;
   z-index: 1;
   background-color: white;
+  padding-left: 5px;
+  padding-right: 0px;
   height: 0px;
   overflow: hidden;
 }
