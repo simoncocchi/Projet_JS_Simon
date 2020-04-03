@@ -162,6 +162,16 @@ footer a {
   text-align: center;
 }
 
+#maingame h1 a {
+  text-decoration: none;
+}
+
+#maingame img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
 #footer {
   position: absolute;
   bottom: 0;

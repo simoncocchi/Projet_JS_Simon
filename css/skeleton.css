@@ -54,9 +54,9 @@
   .column,
   .columns { margin-left: 10px;
     margin-right: 10px;}
-  .column:first-child,
+  /* .column:first-child,
   .columns:first-child {
-    }
+    } */
 
   .one.column,
   .one.columns                    { width: 4.66666666667%; }
