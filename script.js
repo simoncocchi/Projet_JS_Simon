@@ -132,6 +132,7 @@ enregisterSelector.addEventListener('click', function () {
     }
 })
 
+// mise a jour en direct des champs dans l'exemple. 
 titreSelector.oninput = () => {
     var titre = titreSelector.value;
     if (titre) {
@@ -140,7 +141,6 @@ titreSelector.oninput = () => {
         h1Selector.textContent = titre;
     }
 }
-
 
 texteSelector.oninput = () => {
     var texte = texteSelector.value;
