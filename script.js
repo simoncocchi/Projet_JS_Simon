@@ -151,3 +151,6 @@ texteSelector.oninput = () => {
         pSelector.textContent = texte;
     }
 }
+
+// pour la galerie 
+

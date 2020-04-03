@@ -113,6 +113,10 @@ footer a {
     border: 1px solid #bbb;
 }
 
+.boutonentrer:hover, .boutonenregister:hover {
+  box-shadow: inset 0 0 0 25px #bbb;
+}
+
 .boutonenregister{
   display: inline-block;
   height: 38px;
@@ -133,3 +137,33 @@ footer a {
 /* #textadd {
 
 } */
+ 
+/* pour la gallery */
+
+#maingalery .row .one-third img {
+  height: 300px; 
+  width: 300px;
+}
+
+#maingalery .row .twelve img{
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+#marginmosaique {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Pour la page Game */
+
+#maingame h1{
+  text-align: center;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
