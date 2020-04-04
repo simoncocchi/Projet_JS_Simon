@@ -177,3 +177,31 @@ footer a {
   bottom: 0;
   width: 100%;
 }
+
+/* Pour la page Pierre Papier Ciseaux  */
+
+#mainpierre img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+#mainpierre h4 {
+  text-align: center;
+}
+
+#mainpierre h5 {
+  text-align: center;
+}
+
+#mainpierre #gagne {
+  color: green;
+}
+
+#mainpierre #perdu {
+  color: red;
+}
+
+#mainpierre #egalite {
+  color: grey;
+}
