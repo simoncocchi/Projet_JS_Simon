@@ -9,7 +9,6 @@ function fetchAllPost() { // fonction qui récupérer tout les données
 
 
 function create_titre(data) {
-    console.log("functioncreate_titre -> data", data)
     let createtitre = document.createElement('h1'); // creation du titre
     let titre = null;
 
@@ -122,20 +121,46 @@ declencheur.addEventListener('click', (e) => {
 
 let titreSelector = document.querySelector('#titreadd');
 let texteSelector = document.querySelector('#textadd');
-let enregisterSelector = document.querySelector('#articlesave')
+let enregisterSelector = document.querySelector('#articlesave');
+let count = 0;
 
 enregisterSelector.addEventListener('click', function () {
     if (titreSelector.value !== null && texteSelector.value !== null) {
-        feedSelector.prepend(create_article(texteSelector.value));
-        feedSelector.prepend(create_titre(titreSelector.value));
+        count++;
+
+        let divarticleCreate = document.createElement('div');
+        
+
+        feedSelector.prepend(divarticleCreate);
+        
+        divarticleCreate.appendChild(create_titre(titreSelector.value));
+        divarticleCreate.appendChild(create_article(texteSelector.value));
         titreSelector.value = '';
         texteSelector.value = '';
+
+        let divsuprCreate = document.createElement('div');
+        divsuprCreate.classList.add('boutonsupr', 'three', 'columns', 'offset-by-nine');
+        divsuprCreate.id = `article${count}`; //
+        divsuprCreate.textContent = 'Supprimer';
+
+        divarticleCreate.appendChild(divsuprCreate);
 
         dropdown.classList.add('closed'); // fermeture dropdown quand l'enregistrement marhce
 
         alert('Votre article a bien été enregisté') // alert comme quoi l'enregistrement a marché. 
     }
 })
+
+// Suppresion avec button 
+
+feedSelector.addEventListener('click', function (e) {
+   
+    if(e.target.classList.contains('boutonsupr')){
+    document.querySelector(`#${e.target.id}`).parentNode.remove();
+}
+
+});
+
 
 // mise a jour en direct des champs dans l'exemple. 
 titreSelector.oninput = () => {
