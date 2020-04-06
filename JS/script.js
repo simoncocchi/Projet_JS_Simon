@@ -126,10 +126,14 @@ let enregisterSelector = document.querySelector('#articlesave')
 
 enregisterSelector.addEventListener('click', function () {
     if (titreSelector.value !== null && texteSelector.value !== null) {
-        feedSelector.appendChild(create_titre(titreSelector.value));
-        feedSelector.appendChild(create_article(texteSelector.value));
+        feedSelector.prepend(create_article(texteSelector.value));
+        feedSelector.prepend(create_titre(titreSelector.value));
         titreSelector.value = '';
         texteSelector.value = '';
+
+        dropdown.classList.add('closed'); // fermeture dropdown quand l'enregistrement marhce
+
+        // alert('Votre article a bien été enregisté') // alert comme quoi l'enregistrement a marché. 
     }
 })
 
@@ -137,7 +141,6 @@ enregisterSelector.addEventListener('click', function () {
 titreSelector.oninput = () => {
     var titre = titreSelector.value;
     if (titre) {
-        console.log(`Le texte tapé est '${titre}'`);
         let h1Selector = document.querySelector('#articleexemple h1');
         h1Selector.textContent = titre;
     }
@@ -147,7 +150,6 @@ texteSelector.oninput = () => {
     var texte = texteSelector.value;
 
     if (texte) {
-        console.log(`Le texte tapé est '${texte}'`);
         let pSelector = document.querySelector('#articleexemple p');
         pSelector.textContent = texte;
     }
