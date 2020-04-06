@@ -26,6 +26,7 @@ mosaiqueSelector.addEventListener('click', function () {
 
 //pour ajouter des images
 let gallerybodySelector = document.querySelector('main')
+let countimg = 0;
 
 addSelector.addEventListener('click', function () {
 
@@ -48,8 +49,10 @@ addSelector.addEventListener('click', function () {
             galleryrowdivCreate.appendChild(gallerycolumndivCreate);
 
             let galleryimgCreate = document.createElement('img');
-            galleryimgCreate.classList.add('u-max-full-width');
+            galleryimgCreate.classList.add('u-max-full-width','supr');
             galleryimgCreate.src = urlrequest;
+            galleryimgCreate.id = `img${countimg}`;
+            countimg++;
 
             gallerycolumndivCreate.appendChild(galleryimgCreate);
 
@@ -65,8 +68,10 @@ addSelector.addEventListener('click', function () {
             gallerybodySelector.lastElementChild.appendChild(gallerycolumndivCreate);
 
             let galleryimgCreate = document.createElement('img');
-            galleryimgCreate.classList.add('u-max-full-width');
+            galleryimgCreate.classList.add('u-max-full-width','supr');
             galleryimgCreate.src = urlrequest;
+            galleryimgCreate.id = `img${countimg}`;
+            countimg++;
 
             gallerycolumndivCreate.appendChild(galleryimgCreate);
 
@@ -89,3 +94,17 @@ addSelector.addEventListener('click', function () {
           return false;
         }
 }
+
+// pour la suppression 
+
+document.querySelector('main').addEventListener('click', function (e) {
+   
+
+    if(e.target.classList.contains('supr')){
+        let demandesupr = window.prompt(`L'image va etre supprimer yes or no`);
+        if (demandesupr === 'yes'){
+    document.querySelector(`#${e.target.id}`).parentNode.remove();
+}
+}
+
+});
