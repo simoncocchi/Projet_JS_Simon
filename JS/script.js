@@ -133,7 +133,7 @@ enregisterSelector.addEventListener('click', function () {
 
         dropdown.classList.add('closed'); // fermeture dropdown quand l'enregistrement marhce
 
-        // alert('Votre article a bien été enregisté') // alert comme quoi l'enregistrement a marché. 
+        alert('Votre article a bien été enregisté') // alert comme quoi l'enregistrement a marché. 
     }
 })
 

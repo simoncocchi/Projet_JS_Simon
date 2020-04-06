@@ -32,7 +32,7 @@ addSelector.addEventListener('click', function () {
    let urlrequest = window.prompt(`Entrer l'url de l'image que vous souhaitez ajouter`); // ouvertur d'un alert qui demande l'url
 
     if (is_url(urlrequest) === false) {
-        alert(`L'image n'a pas pu être ajouté`);
+        alert(`L'image n'a pas pu être ajouté vérifier que l'url est bien valide`);
     } else {
         
         if (gallerybodySelector.lastElementChild.childNodes.length >= 7) { // if pour vérifier si le dernier élément a déja trois image dans ça ranger
