@@ -1,5 +1,6 @@
 let mosaiqueSelector = document.querySelector('#enmosaique'); // selection du bouton mosaique
 let colonneSelector = document.querySelector('#encolone'); // selection du bouton colonne 
+let addSelector = document.querySelector('#addimg'); // selection du bouton Ajouter
 let divimageSelector = document.querySelectorAll('#maingalery .row div'); // séléction du div contenant les imgs
 
 colonneSelector.addEventListener('click', function () {
@@ -21,4 +22,18 @@ mosaiqueSelector.addEventListener('click', function () {
             element.classList.replace('twelve', 'one-third');
         }
     });
+})
+
+//pour ajouter des images
+
+addSelector.addEventListener('click', function () {
+
+   let urlrequest = window.prompt(`Entrer l'url de l'image que vous souhaitez ajouter`); // ouvertur d'un alert qui demande l'url
+
+    if (urlrequest == null || urlrequest == '') {
+        alert(`l'image n'a pas pu être ajouté`);
+    } else {
+        
+    }
+
 })
