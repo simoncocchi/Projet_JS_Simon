@@ -1,4 +1,5 @@
 function fetchAllPost() { // fonction qui récupérer tout les données 
+    
     fetch('https://jsonplaceholder.typicode.com/users/1/posts')
         .then(response => response.json())
         .then(json => {
