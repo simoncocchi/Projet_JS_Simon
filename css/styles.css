@@ -173,6 +173,20 @@ footer a {
   margin-bottom: 10px;
 }
 
+.suppr {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  background-color: red;
+  padding: 2px;
+  border: solid 1px black;
+}
+
+#suppr-container {
+  position: relative;
+  text-align: center;
+}
+
 /* Pour la page Game */
 
 #maingame h1{
