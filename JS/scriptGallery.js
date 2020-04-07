@@ -52,7 +52,7 @@ addSelector.addEventListener('click', function () {
             let galleryimgCreate = document.createElement('img');
             galleryimgCreate.classList.add('u-max-full-width');
             galleryimgCreate.src = urlrequest;
-        
+
 
             gallerycolumndivCreate.appendChild(galleryimgCreate);
 
@@ -132,7 +132,11 @@ $(document).ready(function () {
     //Using custom configuration
     $(carousel).carouFredSel({
         responsive: true,
-        align: "center",
-        direction: 'left'
+        direction: 'left',
+        width: '100%',
+        height: 'variable',
+        items: {
+            height: 'variable'
+        }
     });
 });
